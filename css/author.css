@@ -1,0 +1,73 @@
+html {
+    scroll-snap-type: y mandatory ;
+    /* scroll-behavior: smooth; */
+}
+.header {
+    scroll-snap-align: start;
+}
+.footer {
+    scroll-snap-align: end;
+}
+.content {
+    scroll-snap-align: start;
+    background-color: black;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+    height: 100vh;
+}
+.warpper {
+    padding-top: 0px;
+}
+.content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.author-info-background {
+    position: relative;
+}
+.author-info {
+    position: absolute;
+}
+.author-info::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background-color: blue; */
+}
+.ibeam {
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--text-secondary);
+    animation-name: ibeam-anime;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+    animation-timing-function: steps(12);
+    animation-fill-mode: both;
+    color: transparent;
+    background-color: black;
+}
+@keyframes ibeam-anime {
+    0% {
+        /* border-color: var(--text-secondary); */
+        left: 0%;
+    }
+    40% {
+        /* border-color: transparent; */
+        left: 100%;
+    }
+    60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%
+    }
+}

@@ -1,0 +1,43 @@
+/* grid在不同瀏覽器有不同異常，優先Chrome*/
+.gaming-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px ;
+    grid-gap: 5px;
+    border-style: solid;
+    border-color: var(--bg-primary);
+    margin: 15px;
+    padding: 5px;
+}
+/* .gaming-link > div {
+} */
+.gaming-link > div > div {
+    height: 100px;
+    width: 50%;
+    justify-content: center;
+}
+.gaming-link-item{
+    margin-bottom: 5px;
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.gaming-link img {
+    height: 70%;
+    max-width: 100px;
+}
+.gaming-link-icon {
+    /* background-color: var(--text-secondary); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.gaming-link-info {
+    background-color: var(--bg-secondary);
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+/* .gaming-link-br {
+} */

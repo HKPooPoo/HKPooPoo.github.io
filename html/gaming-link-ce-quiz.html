@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="電腦自主學習網站"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" name="Alan"/>
+    <title>電腦自主學習網站</title>
+    <link rel="stylesheet" href="../css/stylesheet.css"/>
+    <link rel="stylesheet" href="../css/google.css">
+    <link rel="stylesheet" href="../css/navi.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/gaming-link-ce.css">
+    <script src="https://kit.fontawesome.com/33af392afa.js" crossorigin="anonymous"></script>
+    <style>
+        /* #butt1 {
+            position: absolute;
+            transform: translate(-50% -50%);
+        } */
+    </style>
+</head>
+<body>
+    <a id="top"></a>
+    <div class="header">
+        <div>
+            <img class="header-img" src="../pics/my_pics/header.jpg" alt="">
+        </div>
+        <div class="scroll-animate">
+            <img src="../pics/my_pics/google.png" alt="" id="browser-img">
+            <hr/>
+        </div>
+        <div class="navi">
+            <span style="flex: 1;">
+                <a href="#top"></a>
+                <a href="../html/myCV.html" title="簡歷">
+                    <img src="../pics/my_pics/my-portrait.jpg" alt="">
+                </a>
+            </span>
+            <span class="title" style="flex: 2;">
+                <h1>核試驗場二號</h1>
+            </span>
+            <span style="flex: 1;">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" id="drawer">
+                            <a style="color: var(--text-primary);" class="nav-link" id="logo">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </a>
+                            <span class="link-text" id="logo-text">
+                                <span>這玩意真難搞</span>
+                            </span>
+                        </li>
+                        <li class="nav-item misc-item">
+                            <a href="../index.html" class="link-text">Home</a>
+                            <a href="../index.html" class="nav-link">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item misc-item">
+                            <a href="./pc-link.html" class=" link-text">
+                                <span>PC</span>
+                            </span>
+                            <a href="./pc-link.html" class="nav-link">
+                                <i class="fa-solid fa-computer"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item misc-item">
+                            <a href="./coding-link.html" class="link-text">
+                                <span>Coding</span>
+                            </span>
+                            <a href="./coding-link.html"  class="nav-link">
+                                <i class="fa-solid fa-code"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item misc-item">
+                            <a href="./gaming-link.html" class="link-text">
+                                <span>Gaming</span>
+                            </span>
+                            <a href="./gaming-link.html" class="nav-link">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </span>
+        </div>
+    </div>
+    <div class="warpper">
+        <div class="content item">
+            <div class="ce-quiz-header">
+                <h1>評分ce-quiz-header系統</h1>
+            </div>
+            <div class="ce-quiz">
+                <ol>
+                    <li><span>以下哪個最符合對 Cheat Engine (CE) 的描述？</span>
+                        <ul>
+                            <input type="radio" name="question1" id="true1"><li>內存修改工具</li><br>
+                            <input type="radio" name="question1"><li>作弊工具</li><br>
+                        </ul>
+                    </li>
+                    <!-- <hr class="ce-quiz-hr"> -->
+                    <li><span>以下哪個最符合對 Cheat Table （CT）的描述？</span>
+                        <ul>
+                            <input type="radio" name="question2"><li>一種CE的外挂程式</li><br>
+                            <input type="radio" name="question2" id="true2"><li>一種用於儲存CE修改遊戲內存數據地址的文件格式</li><br>
+                        </ul>
+                    </li>
+                    <hr class="ce-quiz-hr">
+                    <li><span>利用基地址製作的CT是基於什麼原理製作的？</span>
+                        <ul>
+                            <input type="radio" name="question3"><li>基於遊戲程序中的指針地址</li><br>
+                            <input type="radio" name="question3"><li>基於遊戲程序中的偏移地址</li><br>
+                            <input type="radio" name="question3"><li>基於遊戲程序中的動態內存地址</li><br>
+                            <input type="radio" name="question3" id="true3"><li>基於遊戲程序中的靜態內存地址</li><br>
+                        </ul>
+                    </li>
+                    <!-- <hr class="ce-quiz-hr"> -->
+                    <li><span>哪種類型的 Cheat Table 最容易受到遊戲更新的影響？</span>
+                        <ul>
+                            <input type="radio" name="question4"><li>搜索型 Cheat Table</li><br>
+                            <input type="radio" name="question4"><li>指針型 Cheat Table</li><br>
+                            <input type="radio" name="question4" id="true4"><li>基地址型 Cheat Table</li><br>
+                            <input type="radio" name="question4"><li>所有選項皆是</li><br>
+                        </ul>
+                    </li>
+                    <hr class="ce-quiz-hr">
+                    <li><span>猜猜看：作者給予最高評價的游戲是？</span>
+                        <ul>
+                            <input type="radio" name="question5" id="true5"><li>Baldur's Gate 3</li><br>
+                            <input type="radio" name="question5"><li>RDR 2</li><br>
+                            <input type="radio" name="question5"><li>Titanfall 2</li><br>
+                            <input type="radio" name="question5"><li>原神</li><br>
+                        </ul>
+                    </li>
+                    <!-- <hr class="ce-quiz-hr"> -->
+                    <li><span>猜猜看：作者最高游戲時數的游戲是？</span>
+                        <ul>
+                            <input type="radio" name="question6" id="true6"><li>Rimword</li><br>
+                            <input type="radio" name="question6"><li>Stellaris</li><br>
+                            <input type="radio" name="question6"><li>上古卷軸 5</li><br>
+                            <input type="radio" name="question6" id="false1"><li>原神</li><br>
+                        </ul>
+                    </li>
+                    <!-- <hr class="ce-quiz-hr"> -->
+                </ol>
+            </div>
+            <!-- <div class="ce-quiz-footer">
+                <button id="butt1" onclick="count_mark1(this)">點我</button>
+            </div> -->
+            <button id="butt1" onclick="count_mark1(this)">點我</button>
+        </div>
+        <div class="footer item">
+            <div class="info">
+                <div>
+                    <ul>
+                        <li><h1>Navi</h1>
+                            <ul>
+                                <li><a href="./pc-link.html">PC</a></li>
+                                <li><a href="./coding-link.html">Coding</a></li>
+                                <li><a href="./gaming-link.html">Gaming</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h1>About</h1>
+                            <ul>
+                                <li><a href="./author.html">Author</a></li>
+                                <li><a href="./reference.html">Reference</a></li>
+                                <li><a href="./resource.html">Resource</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><h1>Support</h1>
+                            <ul>
+                                <li><a href="./empty.html">沒有</a></li>
+                                <li><a href="./empty.html">沒有</a></li>
+                                <li><a href="./empty.html">沒有</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer_hr">
+            <div class="author">
+                ©Alan_Yu_保留所有權利.
+            </div>
+        </div>
+        <div class="top-portal">
+            <a href="#top" class="nav-link">
+                <i class="fa-solid fa-reply-all"></i>
+            </a>
+        </div>
+    </div>
+    <script src="../js/navi.js"></script>
+    <script src="../js/rotate-html.js"></script>
+</body>
+<script src="../js/navi.js"></script>
+<script src="../js/rotate.js"></script>
+<script src="../js/ce-quiz-new.js"></script>
+</html>

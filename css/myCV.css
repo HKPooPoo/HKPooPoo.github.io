@@ -1,0 +1,51 @@
+.CV-table-head-1, .CV-table-body-1, .CV-table-butt-0 {
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    /* border: solid black 2px; */
+    /* margin: 0px 10px 0px 10px; */
+    padding: 15px;
+    background-color: var(--bg-secondary);
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+.CV-table-head-2, .CV-table-body-2 {
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    /* border: solid black 2px; */
+    /* margin: 0px 10px 0px 10px; */
+    padding: 15px;
+    background-color: var(--bg-primary);
+    color: aliceblue;
+    align-items: center;
+}
+.big-head {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.CV-table-head-2 .self-info-1 {
+    padding-left: 30px;
+    display: inline-block;
+}
+.CV-table-head-2 .self-info-1 span{
+    display: inline-block;
+}
+.CV-table-body-1 {
+    border-radius: 0 0 0 0;
+}
+.CV-table-body-2 {
+    display: block;
+
+}
+.CV-table-body-2 li {
+    list-style-type: decimal;
+    padding-bottom: 15px;
+}
+.CV-table-butt-0 {
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,298 @@
+main {
+    margin-right: 80px;
+    padding: 16px;
+}
+body::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #610c1b;
+}
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    right: 0px;
+    background-color: var(--bg-primary);
+    justify-content: flex-end;
+    /* transition: width 200ms ease; */
+    transition: 200ms ease;
+    z-index: 100;
+    /* display: none; */
+}
+.navbar-nav {
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+.nav-item {
+    width: 100%;
+    height: 50px;
+    /* margin-bottom: 2rem; */
+    /* padding-bottom: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: grayscale(100%) opacity(1);*/
+}
+.misc-item {
+    height: 100px;
+    border-radius: 0 0 0 15px;
+    /* box-shadow: inset 8px 8px 8px rgba(255,255,255,0.7),
+    inset -8px -8px -8px rgba(0,0,0,0.3) !important; */
+    /* box-shadow: inset 8px 8px 8px rgba(255,255,255,0.7); */
+}
+.nav-item, .msic-item, .misc-item > a {
+    transition: 100ms;
+}
+#drawer {
+    border-radius: 15px 0 0 0;
+    transition: 600ms;
+}
+#logo i {
+    transform: rotate(0deg);
+    transition: 400ms ease-in;
+}
+.nav-link {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: deeppink; */
+    color: var(--text-primary);
+}
+.link-text {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: end;
+    font-size: 1rem;
+    width: 6rem;
+    /* height: 50px; */
+    height: 100%;
+    padding-right: 1rem;
+    color: var(--text-primary);
+    /* color: deeppink; */
+}
+.navbar:hover {
+    width: 12rem;
+    border-radius: 15px 0 0 0;
+}
+.navbar:hover .link-text {
+    margin-left: 5px;
+    display: flex;
+}
+.navbar:hover .misc-item {
+    /* filter: grayscale(0%) opacity(1); */
+    /* color: deeppink; */
+    box-shadow: 12px 5px 10px rgba(0,0,0,0.5);
+}
+.misc-item:hover {
+    /* filter: grayscale(0%) opacity(1); */
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    /* 不懂爲何不生效 */
+    /* box-shadow: inset 8px 8px 8px rgba(255,255,255,0.7),
+    inset -8px -8px -8px rgba(0,0,0,0.3) !important; */
+}
+.misc-item:hover a {
+    color: #EEC05C;
+}
+.navbar:hover #logo i {
+    transform: rotate(180deg);
+}
+@media only screen and (max-width:700px) {
+    main {
+        margin-right: 0px;
+        padding: 0px;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    .scroll-animate {
+        display: none;
+    }
+    #drawer {
+        display: none;
+    }
+    .title {
+        font-size: x-small;
+    }
+    .navbar {
+        bottom: 0px;
+        width: 100%;
+        height: 6rem;
+        left: 0px;
+        justify-content: space-around;
+        margin-right: 0px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .navbar:hover .link-text {
+        display: none;
+    }
+    .navbar:hover {
+        width: 100vw;
+        border-radius: 0 0 0 0;
+    }
+    .navbar:hover .misc-item {
+        box-shadow: 0 0 0 0 ;
+    }
+    .misc-item {
+        width: 25%;
+    }
+    .swiper {
+        width: 80vw;
+        height: calc(40vw);
+        margin-top: 30px;
+        --swiper-theme-color: #EEC05C;
+        position: absolute;
+    } 
+    .swiper-slide img{
+        flex-shrink: 0;
+        object-fit: cover;
+        width: 80vw;
+        height: calc(40vw);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .warpper .footer{
+        padding-bottom: 100px;
+        /* margin-bottom: 12rem; */
+    }
+    .warpper {
+        margin-right: 0px;
+        /* padding-bottom: 330px; */
+        min-height: calc(100vh - 100px);
+        padding-bottom: 300px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .top-portal {
+        bottom: calc(100px + 1vh);
+        background-color: var(--bg-secondary);
+        box-shadow: inset 4px 4px 4px rgba(255, 255, 255, 0.5),
+                -4px -4px 4px rgba(0, 0, 0, 0.25),
+                4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+}
+/* 廢話我當然試過 @media only screen and (max-width:700px) and (max-height:500px) { */
+@media only screen and (max-height:550px) {
+    main {
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .scroll-animate {
+        display: none;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+    #drawer {
+        display: none;
+    }
+    .title {
+        font-size: x-small;
+    }
+    .navbar {
+        bottom: 0px;
+        width: 100%;
+        height: 6rem;
+        left: 0px;
+        justify-content: space-around;
+        margin-right: 0px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .navbar:hover .link-text {
+        display: none;
+    }
+    .navbar:hover {
+        width: 100vw;
+        border-radius: 0 0 0 0;
+    }
+    .misc-item {
+        width: 25%;
+    }
+    .navbar:hover .misc-item {
+        box-shadow: 0 0 0 0 ;
+    }
+    .swiper {
+        width: 80vw;
+        height: calc(40vw);
+        margin-top: 30px;
+        --swiper-theme-color: #EEC05C;
+        position: absolute;
+    } 
+    .swiper-slide img{
+        flex-shrink: 0;
+        object-fit: cover;
+        width: 80vw;
+        height: calc(40vw);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .warpper .footer{
+        padding-bottom: 100px;
+        /* margin-bottom: 12rem; */
+    }
+    .warpper {
+        margin-right: 0px;
+        /* padding-bottom: 330px; */
+        min-height: calc(100vh - 100px);
+        padding-bottom: 300px;
+    }
+    .footer {
+        width: 100%;
+    }
+
+}
+/* 此處專爲既嬌小又高貴的iphone服務~ */
+@media only screen and (max-width:500px) {
+    :root {
+        font-size: 8px;
+    }
+    .navbar {
+        position: fixed;
+        bottom: 0px;
+        width: 200vw;
+        height: 12rem;
+        left: 0px;
+        justify-content: space-around;
+        margin-right: 0px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        width: 200vw;
+        /* justify-content: space-between; */
+    }
+    .misc-item {
+        width: calc(25% / 2);
+        border-radius: 0 0 0 0 ;
+    }
+    .navbar:hover {
+        width: 200vw;
+        border-radius: 0 0 0 0;
+    }
+    .title {
+        font-size: 90%;
+    }
+    .top-portal {
+        height: 25px;
+        width: 25px;
+    }
+}
