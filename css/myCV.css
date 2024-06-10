@@ -31,6 +31,9 @@
     padding-left: 30px;
     display: inline-block;
 }
+.CV-table-head-2 * {
+    user-select: text;
+}
 .CV-table-head-2 .self-info-1 span{
     display: inline-block;
 }
