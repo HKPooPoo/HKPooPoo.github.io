@@ -49,3 +49,8 @@
     border-radius: 0 0 15px 15px;
     margin-bottom: 15px;
 }
+.evid-img {
+    width: 90%;
+    object-fit: cover;
+    padding: 15px;
+}
