@@ -37,6 +37,9 @@
 .CV-table-head-2 .self-info-1 span{
     display: inline-block;
 }
+.contact-img {
+    height: 1rem;
+}
 .CV-table-body-1 {
     border-radius: 0 0 0 0;
 }
