@@ -1,3 +1,6 @@
+.warpper .content * {
+    user-select: text;
+}
 .CV-table-head-1, .CV-table-body-1, .CV-table-butt-0 {
     align-self: center;
     width: 90%;
@@ -30,9 +33,6 @@
 .CV-table-head-2 .self-info-1 {
     padding-left: 30px;
     display: inline-block;
-}
-.CV-table-head-2 * {
-    user-select: text;
 }
 .CV-table-head-2 .self-info-1 span{
     display: inline-block;
